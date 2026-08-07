@@ -1,0 +1,14 @@
+.next/
+node_modules/
+.env*
+out/
+.vercel
+.playwright-mcp/
+
+# typescript (se regeneran solos)
+*.tsbuildinfo
+next-env.d.ts
+
+*.log
+.DS_Store
+Thumbs.db
