@@ -69,7 +69,7 @@ public/images/  hero.png · electronica.png · hogar.png · auto.png · local.pn
 - [x] Sección ubicación + Google Maps embed (toggle entre los dos locales)
 - [x] SEO básico (meta tags, OG, schema con un nodo por sucursal)
 - [ ] **Confirmar el horario real de atención** (hoy hay un placeholder en `HOURS`)
-- [ ] Favicon (hoy tira 404)
+- [x] Favicon (`app/icon.tsx`, misma llave dorada que `opengraph-image.tsx`)
 - [ ] Actualizar Next.js — 14.2.15 tiene una vulnerabilidad conocida
 - [ ] Deploy + dominio cerrajerialanus.com
 - [ ] Test mobile
