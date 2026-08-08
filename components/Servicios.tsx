@@ -150,14 +150,12 @@ function Grupo({
   // La franja recorta fuerte arriba y abajo: permite subir o bajar el encuadre
   // según dónde esté el motivo de cada foto.
   posicion = "object-center",
-  nota,
 }: {
   titulo: string;
   imagen: string;
   imagenAlt: string;
   items: Servicio[];
   posicion?: string;
-  nota?: string;
 }) {
   return (
     <div>
@@ -203,18 +201,6 @@ function Grupo({
           </motion.div>
         ))}
       </div>
-
-      {nota && (
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.5 }}
-          className="mt-7 text-center font-display text-2xl sm:text-3xl tracking-wide text-gold"
-        >
-          {nota}
-        </motion.p>
-      )}
     </div>
   );
 }
@@ -250,7 +236,6 @@ export default function Servicios() {
             imagenAlt="Reparación de la computadora de un vehículo con soldador y punta de multímetro"
             items={electronica}
             posicion="object-[50%_40%]"
-            nota="Todo lo que tu auto tenga roto, lo reparamos."
           />
           <Grupo
             titulo="Cerrajería para el Hogar"
